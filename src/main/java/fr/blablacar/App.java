@@ -11,7 +11,7 @@ public class App {
 
 	private static Thing ref1;
 	private static Thing ref2;
-	
+
 	public static void main(String[] args) {
 		System.out.println("** Java memory & threads demo **");
 		printUsage();
@@ -33,8 +33,8 @@ public class App {
 				} else if ("store".equals(action)) {
 					store(tokens);
 				} else if ("forget".equals(action)) {
-					forget(tokens);	} 
-				else if ("print".equals(action)) {
+					forget(tokens);
+				} else if ("print".equals(action)) {
 					System.out.println(ref2 != null ? ref2.toString() : "");
 				} else if ("stop".equals(action)) {
 					stopThread(tokens);
@@ -57,7 +57,7 @@ public class App {
 		ref2 = ref1;
 		System.out.println("Stored");
 	}
-	
+
 	private static void forget(String[] tokens) {
 		boolean forgetRef1 = tokens.length == 1 || "ref1".equals(tokens[1]) || "all".equals(tokens[1]);
 		boolean forgetRef2 = tokens.length == 1 || "ref2".equals(tokens[1]) || "all".equals(tokens[1]);
@@ -72,12 +72,9 @@ public class App {
 	}
 
 	private static void printUsage() {
-		System.out.print("Here are orders you can give me:\n"
-				+"\tstart threadName [durationInSeconds]\n"
-				+"\tstop threadName\n"
-				+"\tstop threadName\n"
-				+"\tstore [howMuch]\n"
-				+"\tforget [ref1 | ref2 | both]\n");
+		System.out.print("Here are orders you can give me:\n" + "\tstart threadName [durationInSeconds]\n"
+				+ "\tstop threadName\n" + "\tstop threadName\n" + "\tstore [howMuch]\n"
+				+ "\tforget [ref1 | ref2 | both]\n");
 	}
 
 	private static void startThread(String[] args) {
@@ -118,5 +115,4 @@ public class App {
 
 	}
 
-	
 }
