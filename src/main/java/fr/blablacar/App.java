@@ -77,7 +77,7 @@ public class App {
 				+"\tstop threadName\n"
 				+"\tstop threadName\n"
 				+"\tstore [howMuch]\n"
-				+"\tclear [ref1 | ref2 | both]\n");
+				+"\tforget [ref1 | ref2 | both]\n");
 	}
 
 	private static void startThread(String[] args) {
