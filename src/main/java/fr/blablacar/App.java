@@ -43,7 +43,7 @@ public class App {
 				} else {
 					printUsage();
 				}
-			} catch (Exception e) {
+			} catch (Throwable e) {
 				System.out.println("Error: " + e.getMessage());
 			}
 		}
