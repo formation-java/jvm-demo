@@ -1,4 +1,4 @@
-package fr.blablacar;
+package fr.glouglouwine;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

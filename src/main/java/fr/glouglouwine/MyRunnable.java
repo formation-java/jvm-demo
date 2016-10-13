@@ -1,4 +1,4 @@
-package fr.blablacar;
+package fr.glouglouwine;
 
 public class MyRunnable implements Runnable {
 

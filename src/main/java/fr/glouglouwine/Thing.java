@@ -1,4 +1,4 @@
-package fr.blablacar;
+package fr.glouglouwine;
 
 import java.awt.Point;
 import java.util.ArrayList;
